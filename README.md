@@ -187,7 +187,7 @@ Make a user domain admin:
 
 - The configuration of the client computer:
 <p align="center">
-<img src="https://imgur.com/Y5p4ws8.jspg" height="90%", width="90%">
+<img src="https://imgur.com/Y5p4ws8.jpg" height="90%", width="90%">
 </p>
 
 - I configured the network settings to point to domain controller for DNS services, by using the Domain Controllers IP address for the DNS server for this client computer.
@@ -195,119 +195,124 @@ Make a user domain admin:
 <img src="https://imgur.com/9ucgALk.jpg" height="90%", width="90%">
 </p>
 
-
+- Resolving and confirming domain from client computer
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/9ucgALk.jpg" height="90%", width="90%">
+</p>
+
+- Joining Client to Domain
+  
+<p align="center">
+<img src="https://imgur.com/eCCvcX4.jpg" height="90%", width="90%">
 </p>
 
 
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/aMqZ2aQ.jpg" height="90%", width="90%">
 </p>
 
 
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/AwxIO2Y.jpg" height="90%", width="90%">
 </p>
 
 
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/BEtoseh.jpg" height="90%", width="90%">
 </p>
 
 
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/DdV1bg6.jpg" height="90%", width="90%">
+</p>
+
+The windows 11 client is successfully joined to the domain "DeeOj-Ltd.com" I created earlier, from which any user can use their credentials to log into their accounts.
+
+<p align="center">
+<img src="https://imgur.com/RAYMS2n.jpg" height="90%", width="90%">
+</p>
+
+- Computer appears to be Joined
+<p align="center">
+<img src="https://imgur.com/SSYrq7t.jpg" height="90%", width="90%">
+</p>
+
+### CREATION OF A THOUSAND USER ACCOUNTS
+Before now, I demonstrated the creation of a user account manually. Now, employing a script, I will create a thousand user accounts and put them in an organizational unit, named "NEW_USERS".
+
+- Run Powershell ISE as administrator
+<p align="center">
+<img src="https://imgur.com/7RDp3HW.jpg" height="90%", width="90%">
+</p>
+
+- Open script
+<p align="center">
+<img src="https://imgur.com/M9v4SIY.jpg" height="90%", width="90%">
+</p>
+
+- Enable Execution of all scripts.
+<p align="center">
+<img src="https://imgur.com/f3FxYSl.jpg" height="90%", width="90%">
+</p>
+
+- Yes to all
+<p align="center">
+<img src="https://imgur.com/4kmDrjK.jpg" height="90%", width="90%">
+</p>
+
+- Navigate to the directory storing the "names" text file.
+<p align="center">
+<img src="https://imgur.com/VXrjFk0.jpg" height="90%", width="90%">
+</p>
+
+- Edit Script
+<p align="center">
+<img src="https://imgur.com/H8HmPcB.jpg" height="90%", width="90%">
+</p>
+
+- Run the script
+<p align="center">
+<img src="https://imgur.com/JS4t2WP.jpg" height="90%", width="90%">
 </p>
 
 
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/dqSK5b1.jpg" height="90%", width="90%">
+</p>
+
+- NEW_USERS organizational unit successfully created
+<p align="center">
+<img src="https://imgur.com/rWqkiBd.jpg" height="90%", width="90%">
+</p>
+
+- A thousand accounts created.
+<p align="center">
+<img src="https://imgur.com/MxGtv02.jpg" height="90%", width="90%">
+</p>
+
+- Login into one of the newly created user accounts.
+<p align="center">
+<img src="https://imgur.com/MxGtv02.jpg" height="90%", width="90%">
 </p>
 
 
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/b2zMK7F.jpg" height="90%", width="90%">
 </p>
 
 
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/M0LZEPt.jpg" height="90%", width="90%">
 </p>
 
 
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/qp8j4l3.jpg" height="90%", width="90%">
 </p>
 
 
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/dYyXiQ0.jpg" height="90%", width="90%">
 </p>
 
 
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-## CONCLUSION
