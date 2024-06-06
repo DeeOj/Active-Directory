@@ -1,4 +1,4 @@
-# PROJECT: Active-Directory
+# PROJECT: ACTIVE DIRECTORY
 
 ## LINKS TO RESOURCES
 - [VMWare Workstation Pro](https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html)
@@ -9,179 +9,190 @@
 ## OVERVIEW OF TASK
 This project involved setting up an Active Directory environment. Key tasks included installing and configuring Windows Server, deploying Active Directory Domain Services, and promoting the server. Additionally, I joined a Windows 11 Pro client was to the domain, and employed a PowerShell script to automate the creation of 1,000 user accounts. Successful domain integration was demonstrated by logging into the client machine with newly created user credentials.
 
+## PROCEDURE
+
+### INSTALLING WINDOWS SERVER 
 
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/wTLzDHX.jpg" height="90%", width="90%">
 </p>
 
 
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/hSUaWSQ.jpg" height="90%", width="90%">
 </p>
 
 
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/xqPJnsE.jpg" height="90%", width="90%">
 </p>
 
 
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/mYHfOLW.jpg" height="90%", width="90%">
+</p>
+
+- Power On the VM
+
+<p align="center">
+<img src="https://imgur.com/CmvSlJX.jpg" height="90%", width="90%">
 </p>
 
 
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/61V1fU5.jpg" height="90%", width="90%">
 </p>
 
 
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/FgJWaP0.jpg" height="90%", width="90%">
 </p>
 
 
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/ZLe9ndq.jpg" height="90%", width="90%">
 </p>
 
 
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/owZ6ROI.jpg" height="90%", width="90%">
 </p>
 
 
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/Tv7mvVX.jpg" height="90%", width="90%">
 </p>
 
 
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/mHVrpgF.jpg" height="90%", width="90%">
+</p>
+
+- Install VMware Tools <br/>
+  This will help in the scaling and resolution of the machine.
+  
+<p align="center">
+<img src="https://imgur.com/NxOa4Ak.jpg" height="90%", width="90%">
+</p>
+
+<p align="center">
+<img src="https://imgur.com/WTk06p3.jpg" height="90%", width="90%">
+</p>
+
+- Rename the PC
+
+<p align="center">
+<img src="https://imgur.com/5lbVDtY.jpg" height="90%", width="90%">
 </p>
 
 
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/YjEGbfC.jpg" height="90%", width="90%">
+</p>
+
+- Setup Static IP Address <br/>
+  I am going to be pointing the client computer towards the domain controller for DNS services as it will also be acting as the DNS server. Thus, the need to set the IP static. Will utilize
+  it's current addressing setup for this.
+  
+<p align="center">
+<img src="https://imgur.com/HYCEEwN.jpg" height="90%", width="90%">
+</p>
+
+<p align="center">
+<img src="https://imgur.com/m8BYLH4.jpg" height="90%", width="90%">
+</p>
+
+- Restart
+  
+<p align="center">
+<img src="https://imgur.com/wUfdkxm.jpg" height="90%", width="90%">
+</p>
+
+### INSTALLING ACTIVE DIRECTORY DOMAIN SERVICES
+
+- Add Roles and Features
+<p align="center">
+<img src="https://imgur.com/EKHeepU.jpg" height="90%", width="90%">
+</p>
+
+- Select server
+<p align="center">
+<img src="https://imgur.com/tNo2QdK.jpg" height="90%", width="90%">
+</p>
+
+- Select Active Directory Domain Services and add features
+<p align="center">
+<img src="https://imgur.com/6vnpg5G.jpg" height="90%", width="90%">
+</p>
+
+- Install
+<p align="center">
+<img src="https://imgur.com/diwONgK.jpg" height="90%", width="90%">
+</p>
+
+### PROMOTING SERVER TO DOMAIN CONTROLLER
+
+<p align="center">
+<img src="https://imgur.com/Tx8ek2N.jpg" height="90%", width="90%">
+</p>
+
+- Add new forest and create(insert) a domain name
+<p align="center">
+<img src="https://imgur.com/5YPNDYP.jpg" height="90%", width="90%">
+</p>
+
+- Set password
+<p align="center">
+<img src="https://imgur.com/gngmO2n.jpg" height="90%", width="90%">
+</p>
+
+- Install and Restart
+<p align="center">
+<img src="https://imgur.com/9PBzl5J.jpg" height="90%", width="90%">
+</p>
+
+We now see the domain is created, and I'm still signing into the domain with the built in administrator account
+<p align="center">
+<img src="https://imgur.com/VNI4LBP.jpg" height="90%", width="90%">
+</p>
+
+- Create Dedicated Admin Account
+ At this point, I will be creating a dedicated account for the administrator. So, as to stop using the built in administrator account.
+
+<p align="center">
+<img src="https://imgur.com/UWkkNuA.jpg" height="90%", width="90%">
 </p>
 
 
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/ADuw9fE.jpg" height="90%", width="90%">
 </p>
 
 
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/brCsHg3.jpg" height="90%", width="90%">
 </p>
 
-
+Account created.
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/09aVDSZ.jpg" height="90%", width="90%">
 </p>
 
-
+Make a user domain admin:
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/wRL9zWA.jpg" height="90%", width="90%">
 </p>
 
+### WINDOWS 11
 
+- The configuration of the client computer:
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/Y5p4ws8.jspg" height="90%", width="90%">
 </p>
 
-
+- I configured the network settings to point to domain controller for DNS services, by using the Domain Controllers IP address for the DNS server for this client computer.
 <p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
-</p>
-
-
-<p align="center">
-<img src=".jpg" height="90%", width="90%">
+<img src="https://imgur.com/9ucgALk.jpg" height="90%", width="90%">
 </p>
 
 
